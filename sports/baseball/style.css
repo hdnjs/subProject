@@ -1,0 +1,108 @@
+/* ========== google font ========== */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&family=Ubuntu&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+}
+
+body {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(2, 12, 32, 1) 100%
+  );
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  margin: 0 50px;
+}
+
+.container .menu_wrap {
+  width: 30%;
+  _position: fixed;
+  /* 메뉴는 왼쪽에 고정할 예정..? */
+}
+
+.container .menu_library {
+  margin-bottom: 3rem;
+}
+
+.container .menu_library .lib_list li {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.container .menu_library .lib_list a {
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.container .menu_playlists {
+  margin-bottom: 5rem;
+}
+
+.container .menu_playlists .play_list li {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.container .menu_playlists .play_list a {
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.container .button {
+  border: 3px solid #fff;
+  border-radius: 2rem;
+  padding: 0.7rem 1rem;
+  width: 10rem;
+  text-align: center;
+}
+
+.container .explore_wrap {
+  width: 70%;
+}
+
+.container .explore_wrap .header_search {
+  display: flex;
+  align-items: center;
+}
+
+.container .explore_wrap .shortcut {
+  display: flex;
+  margin: 1rem 0 2rem;
+}
+
+.container .explore_wrap .item {
+  background: lightgray;
+  border-radius: 30px;
+  padding: 0.7rem 1rem;
+}
+
+.container .explore_wrap .shortcut a {
+  text-decoration: none;
+}
+
+.container .explore_wrap .albumimage {
+  display: flex;
+}
+
+.container .explore_wrap .albumimage .cover {
+  border: 1px solid #fff;
+  background: lightblue;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .explore_wrap .albumimage .cover img {
+  width: 100%;
+}
