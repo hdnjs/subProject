@@ -1,0 +1,160 @@
+/* ===== google font ===== */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  /* 스크롤 없이 원페이지 */
+  background-image: url(../vollyball/img/running.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  margin: 0 20px;
+  /* container 페이지 여백 설정 */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .header_logo img {
+  width: 80px;
+  /* logo 사진 너비 조정 */
+}
+
+/* ========== header_nav style ========== */
+.container .header_nav {
+  padding: 10px;
+}
+
+.container .header_nav .header_nav_link {
+  list-style: none;
+  color: #fff;
+  display: flex;
+}
+
+.container .header_nav .header_nav_link li {
+  padding: 10px 30px;
+  font-size: 30px;
+}
+
+/* ========== header_sns style ========== */
+.container .header_sns {
+  padding: 10px;
+}
+
+.container .header_sns .header_sns_link {
+  list-style: none;
+  display: flex;
+}
+
+.container .header_sns .header_sns_link li {
+  display: block;
+  padding: 10px;
+}
+
+.container .header_sns .header_sns_link li a {
+  text-decoration: none;
+  /* 링크 밑줄 제거 */
+}
+
+.container .header_sns .header_sns_link i {
+  color: #fff;
+  display: flex;
+  font-size: 30px;
+}
+
+/* ========== header_menu style ========== */
+.container .header_menu i {
+  color: #fff;
+  font-size: 30px;
+}
+
+/* ========== main_txt style ========== */
+.container .main_wrap {
+  _background: lightcyan;
+}
+
+.container .main_wrap .main_txt {
+  display: flex;
+  align-items: flex-end;
+}
+
+.container .main_wrap .main_txt h2 {
+  font-size: 50px;
+  color: #fff;
+}
+
+.container .main_wrap .main_txt h1 {
+  font-size: 100px;
+  color: #fff;
+  margin: 0 40px;
+}
+
+hr {
+  background: #fff;
+  height: 1px;
+}
+
+/* ========== footer_wrap style ========== */
+.container .footer_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .footer_wrap h2 {
+  font-size: 20px;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.container .footer_wrap .footer_card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .footer_wrap .footer_card .card_list {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #c0c0c0;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: calc(25% - 1rem);
+}
+
+.container .footer_wrap .footer_card .card_list:hover {
+  opacity: 1;
+}
+
+.container .footer_wrap .footer_card .card_list i {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.container .footer_wrap .footer_card .card_list h3,
+.container .footer_wrap .footer_card .card_list i,
+.container .footer_wrap .footer_card .card_list p {
+  color: #fff;
+}
+
+/* 1) .container .header_nav .header_nav_link li 영역 질문 */

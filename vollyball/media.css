@@ -1,0 +1,13 @@
+@media screen and (max-width: 1190px) {
+  .container .header_sns {
+    display: none;
+  }
+
+  .container .main_wrap .main_txt h2 {
+    font-size: 30px;
+  }
+
+  .container .main_wrap .main_txt h1 {
+    font-size: 80px;
+  }
+}
