@@ -54,6 +54,11 @@ body {
   font-size: 30px;
 }
 
+.container .header_nav .header_nav_link li a {
+  text-decoration: none;
+  color: #fff;
+}
+
 /* ========== header_sns style ========== */
 .container .header_sns {
   padding: 10px;
@@ -139,11 +144,14 @@ hr {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-  width: calc(25% - 1rem);
+  width: calc(25% - 3rem);
+  translate: all 0.5s ease;
 }
 
 .container .footer_wrap .footer_card .card_list:hover {
+  background-color: rgb(224, 243, 78);
   opacity: 1;
+  transform: translateY(-10px);
 }
 
 .container .footer_wrap .footer_card .card_list i {
