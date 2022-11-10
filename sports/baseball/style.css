@@ -11,22 +11,29 @@
 }
 
 body {
-  background-image: url(../baseball/img/2.jpg);
+  background-image: url(../baseball/img/tomas-eidsvold-Jxr2dJZ656Q-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+
+  /* ===================아래 2줄=================================== */
   width: 100%;
   height: auto;
 }
 
 .container {
   display: flex;
+
+  /* ================ 아래 4줄, 좌우 여백...===================================== */
+  /* ================ space around해서 가운데만 정렬..?===================================== */
   width: 100%;
   height: auto;
-  margin: 0 3rem;
+  max-width: 1024px;
+  margin: auto;
 }
 
 .container .menu_wrap {
-  width: 200px;
+  /* ===================아래 한줄=================================== */
+  width: 20%;
   border: 1px solid #fff;
   display: flex;
   flex-direction: column;
@@ -69,9 +76,9 @@ body {
 }
 
 .container .explore_wrap {
-  width: 1000px;
-  height: 100%;
-  _margin-left: 15rem;
+  /* =========================아래 3줄=============================== */
+  width: 50%;
+  height: auto;
   border: 1px solid #fff;
 }
 
@@ -95,11 +102,23 @@ body {
   text-decoration: none;
 }
 
-.container .explore_wrap .albumimage {
-  width: calc(100% - 3rem);
-  height: auto;
+.container .explore_wrap .saying {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container .explore_wrap .saying p {
+  font-size: 50px;
+}
+
+.container .explore_wrap .albumimage {
+  width: 100%;
+  height: auto;
+  /* ====================위 두줄================================== */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container .explore_wrap .albumimage .cover {
@@ -108,10 +127,24 @@ body {
   border-radius: 5px;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50%;
+  margin: 1rem 0;
+  /* ====================아래 한줄================================== */
+  width: calc((100% - 2rem));
   /* 요부분 수정..? */
 }
 
 .container .explore_wrap .albumimage img {
+  /* ===================아래 한줄=================================== */
   width: 50%;
+}
+
+.container .pic_wrap {
+  /* ===================아래 한줄(임시)=================================== */
+  width: 30%;
+}
+.container .pic_wrap .pic_list {
+  /* ===================아래 3줄, 임의로 작성=================================== */
+  border: 1px solid #fff;
+  width: 100%;
+  height: 200px;
 }
