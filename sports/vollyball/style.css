@@ -21,13 +21,14 @@ body {
 .container {
   margin: 0 20px;
   /* container 페이지 여백 설정 */
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .container .header_wrap {
+  height: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,6 +95,9 @@ body {
 /* ========== main_txt style ========== */
 .container .main_wrap {
   _background: lightcyan;
+  height: 60%;
+  display: flex;
+  justify-content: end;
 }
 
 .container .main_wrap .main_txt {
@@ -109,16 +113,18 @@ body {
 .container .main_wrap .main_txt h1 {
   font-size: 100px;
   color: #fff;
-  margin: 0 40px;
+  margin: 0 20px;
 }
 
 hr {
   background: #fff;
   height: 1px;
+  margin: 0.5rem 0;
 }
 
 /* ========== footer_wrap style ========== */
 .container .footer_wrap {
+  height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,7 +133,7 @@ hr {
 .container .footer_wrap h2 {
   font-size: 20px;
   color: #fff;
-  margin: 20px 0;
+  margin: 0.5rem 0 1rem;
 }
 
 .container .footer_wrap .footer_card {

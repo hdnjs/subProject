@@ -11,24 +11,27 @@
 }
 
 body {
-  background: rgb(63, 94, 251);
-  background: radial-gradient(
-    circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(2, 12, 32, 1) 100%
-  );
+  background-image: url(../baseball/img/2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
 }
 
 .container {
   display: flex;
   width: 100%;
-  margin: 0 50px;
+  height: 100%;
+  margin: 0 3rem;
+  position: relative;
 }
 
 .container .menu_wrap {
-  width: 30%;
-  _position: fixed;
-  /* 메뉴는 왼쪽에 고정할 예정..? */
+  width: 200px;
+  position: fixed;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .container .menu_library {
@@ -68,7 +71,13 @@ body {
 }
 
 .container .explore_wrap {
-  width: 70%;
+  width: 1000px;
+  height: 100%;
+  _margin-left: 15rem;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 10rem;
+  top: 3rem;
 }
 
 .container .explore_wrap .header_search {
@@ -82,7 +91,7 @@ body {
 }
 
 .container .explore_wrap .item {
-  background: lightgray;
+  background: rgb(180, 238, 225);
   border-radius: 30px;
   padding: 0.7rem 1rem;
 }
@@ -92,7 +101,10 @@ body {
 }
 
 .container .explore_wrap .albumimage {
+  width: calc(100% - 3rem);
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .container .explore_wrap .albumimage .cover {
@@ -101,8 +113,10 @@ body {
   border-radius: 5px;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 50%;
+  /* 요부분 수정..? */
 }
 
-.container .explore_wrap .albumimage .cover img {
-  width: 100%;
+.container .explore_wrap .albumimage img {
+  width: 50%;
 }
