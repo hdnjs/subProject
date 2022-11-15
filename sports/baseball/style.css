@@ -11,7 +11,7 @@
 }
 
 body {
-  background-image: url(../baseball/img/tomas-eidsvold-Jxr2dJZ656Q-unsplash.jpg);
+  background-image: url(img/00.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -23,27 +23,28 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
+  max-width: 1440px;
   /* ================ 아래 3줄, 좌우 여백...===================================== */
   /* ================ space around해서 가운데만 정렬..?===================================== */
-  max-width: 1440px;
-  height: auto;
   margin: auto;
+  min-height: 100vh;
 }
 
 .container .menu_wrap {
   /* ===================아래 한줄=================================== */
   width: 100%;
   max-width: 250px;
-  height: 600px;
-  border: 1px solid #fff;
   display: flex;
   flex-direction: column;
-  background: lightgray;
-  opacity: 0.5;
+  justify-content: space-around;
 }
 
-.container .menu_introduce {
-  margin-bottom: 3rem;
+.container .menu_title {
+  text-align: center;
+}
+
+.container .menu_introduce h2 {
+  text-align: center;
 }
 
 .container .menu_introduce .intro_list li {
@@ -56,8 +57,8 @@ body {
   margin-left: 1rem;
 }
 
-.container .menu_sns {
-  margin-bottom: 5rem;
+.container .menu_sns h2 {
+  text-align: center;
 }
 
 .container .menu_sns .sns_list li {
@@ -70,30 +71,14 @@ body {
   margin-left: 1rem;
 }
 
-.container .explore_wrap {
+.container .middle_wrap {
   /* =========================아래 3줄=============================== */
   width: 100%;
   max-width: 700px;
-  height: auto;
-  border: 1px solid #fff;
+  height: 500px;
 }
 
-.container .explore_wrap .shortcut {
-  display: flex;
-  margin: 1rem 0 2rem;
-}
-
-.container .explore_wrap .item {
-  background: rgb(180, 238, 225);
-  border-radius: 30px;
-  padding: 0.7rem 1rem;
-}
-
-.container .explore_wrap .shortcut a {
-  text-decoration: none;
-}
-
-.container .explore_wrap .albumimage {
+.container .middle_wrap .newsbox {
   width: 100%;
   height: auto;
   /* ====================위 두줄================================== */
@@ -103,28 +88,53 @@ body {
   align-items: center;
 }
 
-.container .explore_wrap .albumimage .cover {
-  border: 1px solid #fff;
-  background: lightblue;
-  border-radius: 5px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 1rem 0;
-  /* ====================아래 한줄================================== */
-  width: calc((100% - 2rem));
-  /* 요부분 수정..? */
+.container .middle_wrap .newstitle {
+  display: flex;
+  justify-content: space-between;
 }
 
-.container .explore_wrap .albumimage img {
-  /* ===================아래 한줄=================================== */
-  width: 50%;
+.container .middle_wrap hr {
+  color: #fff;
+}
+
+.container .middle_wrap .newstitle span,
+.container .middle_wrap .storytitle span,
+.container .middle_wrap .cuttitle span {
+  font-size: 25px;
+}
+
+.container .middle_wrap .newstitle i,
+.container .middle_wrap .storytitle i,
+.container .middle_wrap .cuttitle i {
+  color: red;
+  font-size: 30px;
+}
+
+.container .middle_wrap .newsbox,
+.container .middle_wrap .storybox,
+.container .middle_wrap .cutbox {
+  /* ====================아래 한줄================================== */
+  background: lightblue;
+  border-radius: 5px;
+  margin: 1rem 0;
+  height: 300px;
+}
+
+.container .middle_wrap .newsbox .nitem {
+  /* ====================아래 한줄================================== */
+  border: 1px solid black;
+}
+
+.container .middle_wrap .storytitle {
+  display: flex;
+  justify-content: space-between;
 }
 
 .container .pic_wrap {
   /* ===================아래 세줄(임시)=================================== */
   width: 100%;
   max-width: 350px;
-  height: 600px;
+  height: 500px;
   background: lightgray;
 }
 
