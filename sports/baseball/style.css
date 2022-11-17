@@ -8,6 +8,7 @@
   font-family: "Titillium Web", sans-serif;
   font-family: "Ubuntu", sans-serif;
   color: #fff;
+  overflow: hidden;
 }
 
 body {
@@ -18,11 +19,13 @@ body {
   /* ===================아래 2줄=================================== */
   width: 100%;
   height: auto;
+  position: fixed;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1440px;
   /* ================ 아래 3줄, 좌우 여백...===================================== */
   /* ================ space around해서 가운데만 정렬..?===================================== */
@@ -34,9 +37,10 @@ body {
   /* ===================아래 한줄=================================== */
   width: 100%;
   max-width: 250px;
+  height: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .container .menu_title {
@@ -75,67 +79,93 @@ body {
   /* =========================아래 3줄=============================== */
   width: 100%;
   max-width: 700px;
-  height: 500px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.container .middle_wrap .newsbox {
-  width: 100%;
-  height: auto;
-  /* ====================위 두줄================================== */
-
+.container .middle_wrap .item1 {
+  width: 50%;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-end;
+  background-image: url(img/012.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  position: relative;
 }
 
-.container .middle_wrap .newstitle {
+.container .middle_wrap .item1:hover {
+  color: white;
+  opacity: 1;
+}
+
+.container .middle_wrap .item1 .item1-title {
   display: flex;
-  justify-content: space-between;
 }
 
-.container .middle_wrap hr {
-  color: #fff;
+.container .middle_wrap .item1 i {
+  position: absolute;
+  font-size: 7rem;
+  right: 2rem;
+  top: 25%;
 }
 
-.container .middle_wrap .newstitle span,
-.container .middle_wrap .storytitle span,
-.container .middle_wrap .cuttitle span {
-  font-size: 25px;
-}
-
-.container .middle_wrap .newstitle i,
-.container .middle_wrap .storytitle i,
-.container .middle_wrap .cuttitle i {
-  color: red;
-  font-size: 30px;
-}
-
-.container .middle_wrap .newsbox,
-.container .middle_wrap .storybox,
-.container .middle_wrap .cutbox {
-  /* ====================아래 한줄================================== */
-  background: lightblue;
-  border-radius: 5px;
-  margin: 1rem 0;
-  height: 300px;
-}
-
-.container .middle_wrap .newsbox .nitem {
-  /* ====================아래 한줄================================== */
-  border: 1px solid black;
-}
-
-.container .middle_wrap .storytitle {
+.container .middle_wrap .item2 {
+  width: 50%;
+  padding: 0.5rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(img/123.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  position: relative;
+}
+
+.container .middle_wrap .item2 .item2-title {
+  display: flex;
+}
+
+.container .middle_wrap .item2 i {
+  position: absolute;
+  font-size: 7rem;
+  right: 2rem;
+  top: 25%;
+}
+
+.container .middle_wrap .item3 {
+  width: 50%;
+  padding: 0.5rem;
+  background: #fff;
+  background-image: url(img/em.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .middle_wrap .item4 {
+  width: 50%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ff0000;
+}
+
+.container .middle_wrap .item5 {
+  width: 100%;
+  background-color: purple;
+  padding: 0.5rem;
 }
 
 .container .pic_wrap {
   /* ===================아래 세줄(임시)=================================== */
   width: 100%;
   max-width: 350px;
-  height: 500px;
-  background: lightgray;
+  height: 600px;
 }
 
 .container .pic_wrap img {
